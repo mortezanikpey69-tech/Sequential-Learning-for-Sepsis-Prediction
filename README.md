@@ -1,2 +1,4 @@
 # Sequential-Learning-for-Sepsis-Prediction
-LSTM and TRANSFORMER MODELS FOR SEPSIS PREDICTION
+LSTM and TRANSFORMER MODELS FOR SEPSIS PREDICTION:
+Early detection of sepsis in ICU patients is critical, as timely intervention can substantially reduce mortality and improve patient outcomes. This study presents a systematic framework for sepsis prediction using publicly available ICU time-series data from over 40,000 patients. Unlike studies focused solely on maximizing predictive accuracy, our primary aim is to evaluate and compare sequential modeling approaches—including LSTM, BiLSTM, and Transformer architectures—under the challenges of class imbalance and real-world ICU data.
+We implemented rigorous preprocessing pipelines, handling missing values, normalizing vital signs and laboratory measurements, and reducing noise to ensure reproducibility and scalability. Models were trained and evaluated using stratified train/validation/test splits, with performance metrics including precision, recall, F1-score, and AUROC. Threshold optimization was emphasized to balance sensitivity and specificity, directly impacting clinical decision-making.
