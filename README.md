@@ -127,6 +127,8 @@ history = model.fit(X_train, y_train,
 
 
 
+# ---------------------- --------------- ----------------------
+# ---------------------- --------------- ----------------------
 
 # ---------------------- Transformer model ----------------------
 # ------------------- Padding -------------------
@@ -274,8 +276,10 @@ history = model.fit(X_train, y_train,
 
 
 
+# ---------------------- --------------- ----------------------
+# ---------------------- --------------- ----------------------
 
-#perdict code
+# ---------------------- predict code ----------------------
 
 import pandas as pd
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score, average_precision_score
