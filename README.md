@@ -9,7 +9,7 @@ We implemented rigorous preprocessing pipelines, handling missing values, normal
 #
 #
 #
-#LSTM code
+# ---------------------- libraries and load data----------------------
 import pandas as pd
 import numpy as np
 import tensorflow as tf
@@ -44,7 +44,7 @@ patient_lengths = data['patient_lengths']
 features = data['features']
 patients = data['patients']
 
-
+# ---------------------- LSTM MODEL ----------------------
 # ---------------------- Padding ----------------------
 padding_value = -999.0
 max_timesteps = max(patient_lengths)
@@ -128,7 +128,7 @@ history = model.fit(X_train, y_train,
 
 
 
-#Transformer code
+# ---------------------- Transformer model ----------------------
 # ------------------- Padding -------------------
 PADDING_VALUE = -99.0
 MAX_LEN = min(256, np.max(patient_lengths))  # سقف انتخابی (مثلا 256)
